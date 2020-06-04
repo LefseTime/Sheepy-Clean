@@ -1,0 +1,331 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    position: absolute;
+}
+
+img{
+    max-width: 100%;
+	height: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    width: 100%;
+    margin: 0;
+}
+
+/* Home Page */
+
+.home{
+    display: grid;
+    grid-template-rows: 12em 8em 2fr 1fr 12em;
+}
+
+.promo-banner {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+    background-color: black;
+    margin: 2em 0em;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.promo-photo{
+    display: block;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+    height: 100%;
+    width: 100%;
+    max-width: 30em;
+}
+
+.overlay-fade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    height: 0;
+    transition: .5s ease;
+    background-color: black;
+}
+
+.overlay-fade-text{
+    color: white;
+    opacity: 1;
+}
+  
+.promo-photo:hover .overlay-fade {
+    opacity: 1;
+    height: 5em;
+}
+
+.promo-photo:active .overlay-fade {
+    opacity: 1;
+    height: 5em;
+}
+
+/* Shop Page */
+
+.shop {
+    display: grid;
+    grid-template-rows: 12em 1fr 12em;
+}
+
+.shop-body{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2em;
+    width: 95%;
+}
+
+.shop-content{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 2em;
+    width: 100%;
+}
+
+.shop-row{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.shop-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+}
+
+.shop-products{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-delivery {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-ordering{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#mint-bow{
+    height: 100%;
+    width: auto;
+    max-height: 30em;
+}
+
+/* About Page */
+
+.about {
+    display: grid;
+    grid-template-rows: 12em 1fr 12em;
+}
+
+.about-body{
+    display: block;
+    text-align: center;
+    line-height: 2em;
+    margin: 0em 2em;
+    width: 95%;
+}
+
+.about-body h3{
+    text-align: left;
+    margin: 2em;
+}
+
+/* Farmers Page */
+
+.farmers {
+    display: grid;
+    grid-template-rows: 12em 1fr 12em;
+}
+
+.farmers-body{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+}
+
+.farmers-body h3{
+    display: block;
+    line-height: 2em;
+    width: 95%;
+}
+
+.maple-hill-images{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1em 2em;
+}
+
+.windswept-hill-images{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1em 2em;
+}
+
+.maple-hill-image{
+    height: auto;
+    width: auto;
+    max-width: 500px;
+    margin: 1em 2em;
+}
+
+.windswept-hill-image{
+    height: 100%;
+    width: auto;
+    max-height: 25em;
+    max-width: 500px;
+    margin: 1em 2em;
+}
+
+/* Contact Page */
+
+.contact {
+    display: grid;
+    grid-template-rows: 12em 1fr 12em;
+}
+
+.contact-body{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Header */
+
+header{
+    margin-top: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class="nav-center-div"] {
+      font-size: .7em;
+    }
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#header-logo{
+    display:flex;
+    justify-content: start;
+    height: auto;
+    width: auto;
+    max-height: 10em;
+    max-width: 10em;
+}
+
+.nav-center-div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+.nav-left-div{
+    justify-content: start;
+    padding: 1em;
+}
+
+.nav-right-div{
+    justify-content: end;
+    padding: 1em;
+}
+
+.main-nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-link{
+    padding: 1em;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.nav-link:hover{
+    color: #31376c;
+    text-decoration: underline;
+    text-decoration-style: solid;
+}
+
+.social-nav{
+    justify-content: flex-end;
+}
+
+.social-link{
+    color: black;
+    padding: 1em;
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.social-link:hover{
+    color: #31376c;
+}
+
+.promo-photo{
+    width: 100%;
+    height: auto;
+}
+
+/* Footer */
