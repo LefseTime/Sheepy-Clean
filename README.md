@@ -4,3 +4,4 @@ A website for a small local business selling felted soaps made from local sheep 
 ## Technologies
 - HTML
 - CSS (Grid, Flexbox)
+- JavaScript (Vanilla)
