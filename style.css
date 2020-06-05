@@ -2,11 +2,18 @@ body{
     font-family: 'Raleway', sans-serif;
     width: 100%;
     position: absolute;
+    margin: 0 auto;
 }
 
 img{
-    max-width: 100%;
-	height: auto;
+    width: auto;
+    height: 100%;
+    max-height: 20em;
+    min-height: 9em;
+}
+
+p{
+    font-size: 1.2em;
 }
 
 .container {
@@ -21,7 +28,7 @@ img{
 
 .home{
     display: grid;
-    grid-template-rows: 12em 8em 2fr 1fr 12em;
+    grid-template-rows: 12em 8em 1fr 12em;
 }
 
 .promo-banner {
@@ -94,7 +101,7 @@ img{
     justify-content: space-evenly;
     align-items: center;
     margin: 2em;
-    width: 95%;
+    width: 100%;
 }
 
 .shop-content{
@@ -174,19 +181,21 @@ img{
 }
 
 .farmers-body{
-    display: flex;
+    display: block;
+    text-align: center;
+    /* display: flex;
     flex-flow: column;
     justify-content: center;
-    align-items: center;
-    width: 95%;
+    align-items: center; */
+    width: 100%;
 }
 
-.farmers-body h3{
-    display: block;
-    line-height: 2em;
-    width: 95%;
+.farmers-body p{
+    font-size: 1.2em;
+    text-align: center;
+    padding: 0 5em;
 }
-
+/* 
 .maple-hill-images{
     display: flex;
     flex-flow: row wrap;
@@ -201,14 +210,24 @@ img{
     justify-content: space-evenly;
     align-items: center;
     margin: 1em 2em;
-}
+} */
 
-.maple-hill-image{
+#maple-hill-image-1{
     height: auto;
     width: auto;
     max-width: 500px;
     margin: 1em 2em;
+    float: right;
 }
+
+#maple-hill-image-2{
+    height: auto;
+    width: auto;
+    max-width: 500px;
+    margin: 1em 2em;
+    float: left;
+}
+
 
 .windswept-hill-image{
     height: 100%;
@@ -216,6 +235,7 @@ img{
     max-height: 25em;
     max-width: 500px;
     margin: 1em 2em;
+
 }
 
 /* Contact Page */
@@ -246,7 +266,7 @@ header{
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     [class="nav-center-div"] {
-      font-size: .7em;
+      font-size: .5em;
     }
 }
 
@@ -307,7 +327,7 @@ nav{
 }
 
 .social-nav{
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .social-link{
@@ -329,3 +349,11 @@ nav{
 }
 
 /* Footer */
+
+footer{
+    margin-top: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
