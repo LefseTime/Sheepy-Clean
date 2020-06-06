@@ -5,3 +5,6 @@ A front end website for a small local business selling felted soaps made from lo
 - HTML
 - CSS (Grid, Flexbox)
 - JavaScript (Vanilla)
+
+## Screenshots
+![Homepage v.1](/media/homepagescreenshot.png)
