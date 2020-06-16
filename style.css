@@ -29,6 +29,7 @@ p{
 .home{
     display: grid;
     grid-template-rows: 12em 8em 1fr 12em;
+    width: 100%;
 }
 
 .promo-banner {
@@ -64,7 +65,7 @@ p{
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     right: 0;
     opacity: 0;
@@ -93,6 +94,7 @@ p{
 .shop {
     display: grid;
     grid-template-rows: 12em 1fr 12em;
+    width: 100%;
 }
 
 .shop-body{
@@ -114,7 +116,7 @@ p{
 .shop-row{
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
 }
@@ -131,6 +133,7 @@ p{
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 }
 
 .shop-delivery {
@@ -158,6 +161,7 @@ p{
 .about {
     display: grid;
     grid-template-rows: 12em 1fr 12em;
+    width: 100%;
 }
 
 .about-body{
@@ -165,7 +169,7 @@ p{
     text-align: center;
     line-height: 2em;
     margin: 0em 2em;
-    width: 95%;
+    width: 100%;
 }
 
 .about-body h3{
@@ -178,15 +182,14 @@ p{
 .farmers {
     display: grid;
     grid-template-rows: 12em 1fr 12em;
+    width: 100%;
 }
 
 .farmers-body{
-    display: block;
-    text-align: center;
-    /* display: flex;
+    display: flex;
     flex-flow: column;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
     width: 100%;
 }
 
@@ -195,8 +198,24 @@ p{
     text-align: center;
     padding: 0 5em;
 }
-/* 
-.maple-hill-images{
+
+.farmers-name{
+    text-align: center;
+}
+
+.farmers-text{
+    display: flex;
+    flex-flow: column;
+}
+
+.farmers-opening, .farmers-maple-hill, .farmers-windswept-hill{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    max-width: 100%;
+}
+
+.maple-hill-images, .windswept-hill-images{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -204,38 +223,12 @@ p{
     margin: 1em 2em;
 }
 
-.windswept-hill-images{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 1em 2em;
-} */
-
-#maple-hill-image-1{
-    height: auto;
-    width: auto;
-    max-width: 500px;
-    margin: 1em 2em;
-    float: right;
-}
-
-#maple-hill-image-2{
-    height: auto;
-    width: auto;
-    max-width: 500px;
-    margin: 1em 2em;
-    float: left;
-}
-
-
-.windswept-hill-image{
+.maple-hill-image, .windswept-hill-image{
     height: 100%;
     width: auto;
     max-height: 25em;
     max-width: 500px;
     margin: 1em 2em;
-
 }
 
 /* Contact Page */
@@ -243,6 +236,7 @@ p{
 .contact {
     display: grid;
     grid-template-rows: 12em 1fr 12em;
+    width: 100%;
 }
 
 .contact-body{
@@ -250,6 +244,7 @@ p{
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 
@@ -265,8 +260,20 @@ header{
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
-    [class="nav-center-div"] {
-      font-size: .5em;
+    [class="home"]{
+        grid-template-rows: 20em 8em 1fr 12em;
+    }
+    [class="about"] {
+        grid-template-rows: 20em 1fr 12em;
+    }
+    [class="shop"]{
+        grid-template-rows: 20em 1fr 12em;
+    }
+    [class="farmers"]{
+        grid-template-rows: 20em 1fr 12em;
+    }
+    [class="contact"]{
+        grid-template-rows: 20em 1fr 12em;
     }
 }
 
