@@ -178,17 +178,17 @@ p{
     width: 100%;
 }
 
-.about-body{
-    display: block;
-    text-align: center;
-    line-height: 2rem;
-    box-sizing: border-box;
-    padding: 0rem 8rem;
+#about-title, #about-questions{
+    display: flex;
+    justify-self: center;
 }
 
 #about-text{
+    display: flex;
+    flex-flow: row wrap;
     box-sizing: border-box;
     padding: 2rem 4rem;
+    justify-content: center;
 }
 
 /* Farmers Page */
@@ -255,8 +255,8 @@ p{
     /* grid-template-rows: 12em 1fr 12em; */
     grid-template-rows: auto;
     width: 100%;
-    padding: 0;
-    margin: 0;
+    /* padding: 0;
+    margin: 0; */
 }
 
 .contact-body{
