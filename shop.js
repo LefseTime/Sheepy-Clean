@@ -1,5 +1,5 @@
 /* contents of "stock" below can be updated to update website's Current Scents list */
-const stock = ["Almond", "Geranium Rose", "Lavender", "Mint", "Orange Spice"];
+const stock = ["Almond", "Geranium Rose", "Lavender", "Peppermint", "Orange Spice"];
 let ul = document.getElementById("stock-scents");
 let current;
 let li;
